@@ -17,4 +17,4 @@ const eqArrays = function (arr1, arr2) {
   }
   return true;
 };
-assertEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"], false);
+assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), false);
