@@ -16,10 +16,23 @@ const assertArraysEqual = function (arr1, arr2) {
   } else {
     console.log('no match');
   }
-}
+};
 
-const middle = function (){
+const middle = function (arr){
+  let newArray = [];
+    if (arr.length === 1) {
+      newArray = [];
+    } else if (arr.length === 2) {
+      newArray = [];
+    } else if (arr.length % 2 !== 0) {
+      newArray.push(arr[Math.floor(arr.length/2)]);
+    } else {
+      newArray.push(arr[(arr.length/2)-1], arr[arr.length/2]);
+    }
   
+  return newArray;
 }
 
-assertArraysEqual(["1", "2", "3"], ["1", "2", 3]);
+
+assertArraysEqual(middle(["1", "2"]), ["3", "4"]);
+
