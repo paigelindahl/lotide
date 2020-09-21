@@ -14,7 +14,7 @@ const eqArrays = function (arr1, arr2) {
 
 const assertArraysEqual = function (arr1, arr2) {
   if (eqArrays(arr1, arr2)) {
-    console.log('it\s a match');
+    console.log('it\s a match!');
   } else {
     console.log('no match');
   }
@@ -30,3 +30,5 @@ const map = function(arr, callback) {
 }
 
 console.log(assertArraysEqual(map(words, word => word[0]), [ 'g', 'c', 't', 'm', 't' ]));
+
+module.exports = map;

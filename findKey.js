@@ -1,3 +1,5 @@
+const findKeyByValue = require("./findKeyByValue");
+
 const assertEqual = function(actual, expected) {
   console.log(actual);
   console.log(expected);
@@ -28,3 +30,5 @@ console.log(assertEqual(findKey({
   "Ora":       { stars: 2 },
   "Akelarre":  { stars: 3 }
 }, x => x.stars === 2), "noma"));
+
+module.exports = findKey;
