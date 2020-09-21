@@ -30,7 +30,7 @@ const without = function (arr1, arr2) {
   return finalArray;
 };
 
-assertArraysEqual(without(["1", "2", "3"], [1, 2, "3"]), ["1", "2"]);
+// assertArraysEqual(without(["1", "2", "3"], [1, 2, "3"]), ["1", "2"]);
 
 module.exports = without;
 

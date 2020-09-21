@@ -34,6 +34,6 @@ const eqObjects = function(obj1, obj2) {
   };
   
 
-console.log(assertObjectsEqual(eqObjects({ a: '1', b: 2 }, { b: 2, a: '1' }), true));
+// console.log(assertObjectsEqual(eqObjects({ a: '1', b: 2 }, { b: 2, a: '1' }), true));
 
 module.exports = assertObjectsEqual;
